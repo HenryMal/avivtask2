@@ -29,6 +29,13 @@ body {
   background: #fff;
   transition: 0.5s;
 }
+
+.calculator_container:hover {
+  background: lightyellow;
+  transition: 0.5s;
+  transform: scale(1.05) perspective(1px);
+}
+
 .shape_name {
   margin-top: 15px;
   text-align: center;
@@ -55,6 +62,11 @@ body {
   background-color: #4b403a;
   transition: 0.5s;
   transform: scale(1.2) perspective(1px);
+}
+
+.calculate:active {
+  background-color: rgb(126, 114, 93);
+  transition: 0.1s;
 }
 
 .calculations {
