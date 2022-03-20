@@ -27,12 +27,12 @@ body {
   height: auto;
   width: 600px;
   background: #fff;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 .calculator_container:hover {
   background: lightyellow;
-  transition: 0.5s;
+  transition: 0.2s;
   transform: scale(1.05) perspective(1px);
 }
 
