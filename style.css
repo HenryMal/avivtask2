@@ -14,3 +14,9 @@ body {
   width: 100%;
   overflow: auto;
 }
+.main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
