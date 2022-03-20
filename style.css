@@ -48,13 +48,16 @@ body {
   background-color: black;
   color: white;
   align-items: center;
+  box-shadow: 3px 5px 5px #888888;
+  transition: all 1s ease;
+  transform: scale(1);
+}
+.calculate:hover {
+  background-color: #4b403a;
+  transition: 1s;
+  transform: scale(1.2) perspective(1px);
 }
 
-.calculate:hover {
-  background: linear-gradient(to right, #212121, #4b403a, #212121);
-  padding-right: 10px;
-  padding-left: 10px;
-}
 .type {
   margin-left: 25px;
 }
