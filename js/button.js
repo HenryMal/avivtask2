@@ -2,24 +2,29 @@ const rect = document.getElementById("rectangle");
 const tri = document.getElementById("triangle");
 const cir = document.getElementById("circle");
 
-rect.addEventListener("click", myFunction);
-tri.addEventListener("click", myFunction2);
-cir.addEventListener("click", myFunction3);
+rect.addEventListener("click", rectArea);
+tri.addEventListener("click", triArea);
+cir.addEventListener("click", cirArea);
 
-function myFunction() {
-    var rectHeight = document.getElementById("height").value;
-    var rectWidth = document.getElementById("width").value;
-    var rectArea = rectHeight * rectWidth;
-    document.getElementById("demo").innerHTML = rectArea;
+var height;
+var width;
+var area;
+var radius;
+
+function rectArea() {
+    height = document.getElementById("rectHeight").value;
+    width = document.getElementById("rectWidth").value;
+    area = height * width;
+    document.getElementById("demo").innerHTML = area;
 }
-function myFunction2() {
-    var triHeight = document.getElementById("height").value;
-    var triWidth = document.getElementById("width").value;
-    var triArea = (triHeight * triWidth) / 2;
-    document.getElementById("demo1").innerHTML = triArea;
+function triArea() {
+    height = document.getElementById("triHeight").value;
+    width = document.getElementById("triWidth").value;
+    area = (height * width) / 2;
+    document.getElementById("demo1").innerHTML = area;
   }
-function myFunction3() {
-    var cirRadius = document.getElementById("radius").value;
-    var cirArea = Math.pow(cirRadius, 2) * Math.PI;
-    document.getElementById("demo2").innerHTML = cirArea;
+function cirArea() {
+    radius = document.getElementById("radius").value;
+    area = Math.pow(radius, 2) * Math.PI;
+    document.getElementById("demo2").innerHTML = area;
 }
