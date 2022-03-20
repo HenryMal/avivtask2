@@ -27,6 +27,7 @@ body {
   height: auto;
   width: 600px;
   background: #fff;
+  transition: 0.5s;
 }
 .shape_name {
   margin-top: 15px;
@@ -41,7 +42,7 @@ body {
   gap: 10px;
 }
 .calculate {
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 5%;
   padding: 5px;
   border-radius: 12px;
@@ -49,12 +50,11 @@ body {
   color: white;
   align-items: center;
   box-shadow: 3px 5px 5px #888888;
-  transition: all 1s ease;
-  transform: scale(1);
+  transition: all 0.5s ease;
 }
 .calculate:hover {
   background-color: #4b403a;
-  transition: 1s;
+  transition: 0.5s;
   transform: scale(1.2) perspective(1px);
 }
 
