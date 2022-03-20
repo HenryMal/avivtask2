@@ -8,9 +8,7 @@
     <title>Document</title>
   </head>
   <body>
-    <script>
-      src = "js/main.js";
-    </script>
+    <script src="js/button.js"></script>
     <div class="main">
       <div class="calculator_container">
         <h2 class="shape_name">Reactangle Area Calculator</h2>
@@ -24,7 +22,11 @@
             Width:
             <input type="text" class="type" placeholder="Enter width here" />
           </div>
-          <button class="calculate" type="button">Calculate</button>
+          <p id="demo">
+            <button id="rectangle" class="calculate" onclick="myFunction()">
+              Calculate
+            </button>
+          </p>
         </div>
       </div>
       <div class="calculator_container">
@@ -39,7 +41,9 @@
             Width:
             <input type="text" class="type" placeholder="Enter width here" />
           </div>
-          <button class="calculate" type="button">Calculate</button>
+          <button id="triangle" class="calculate" type="button">
+            Calculate
+          </button>
         </div>
       </div>
       <div class="calculator_container">
@@ -49,7 +53,7 @@
             Radius:
             <input type="text" class="type" placeholder="Enter radius here" />
           </div>
-          <button class="calculate">Calculate</button>
+          <button id="circle" class="calculate">Calculate</button>
         </div>
       </div>
     </div>
