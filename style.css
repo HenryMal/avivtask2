@@ -42,7 +42,6 @@ body {
   gap: 10px;
 }
 .calculate {
-  margin-top: 5%;
   margin-bottom: 5%;
   padding: 5px;
   border-radius: 12px;
@@ -56,6 +55,10 @@ body {
   background-color: #4b403a;
   transition: 0.5s;
   transform: scale(1.2) perspective(1px);
+}
+
+.calculations {
+  padding: 2%;
 }
 
 .type {
