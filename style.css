@@ -58,9 +58,16 @@ body {
 }
 
 .calculations {
+  display: flex;
+  justify-content: center;
   padding: 2%;
+  gap: 10px;
 }
 
 .type {
-  margin-left: 25px;
+  margin-left: 10px;
+}
+
+.paragraph {
+  font-weight: bold;
 }
