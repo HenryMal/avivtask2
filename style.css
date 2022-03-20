@@ -30,6 +30,5 @@ body {
 .shape_name {
   margin-top: 15px;
   width: auto;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
