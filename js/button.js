@@ -7,11 +7,19 @@ tri.addEventListener("click", myFunction2);
 cir.addEventListener("click", myFunction3);
 
 function myFunction() {
-  document.getElementById("demo").innerHTML = "Hello World";
+    var rectHeight = document.getElementById("height").value;
+    var rectWidth = document.getElementById("width").value;
+    var rectArea = rectHeight * rectWidth;
+    document.getElementById("demo").innerHTML = rectArea;
 }
 function myFunction2() {
-    document.getElementById("demo1").innerHTML = "Hello World";
+    var triHeight = document.getElementById("height").value;
+    var triWidth = document.getElementById("width").value;
+    var triArea = (triHeight * triWidth) / 2;
+    document.getElementById("demo1").innerHTML = triArea;
   }
 function myFunction3() {
-    document.getElementById("demo2").innerHTML = "Hello World";
+    var cirRadius = document.getElementById("radius").value;
+    var cirArea = Math.pow(cirRadius, 2) * Math.PI;
+    document.getElementById("demo2").innerHTML = cirArea;
 }
